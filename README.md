@@ -10,7 +10,7 @@ Streamlit Community Cloud for the dashboard.
 
 Try the dashboard here: https://healthcare-disease-analysis-bysuguna.streamlit.app/
 
-<img width="2130" height="1211" alt="dashboard-screenshot" src="https://github.com/user-attachments/assets/d9eeb758-96ec-4165-87b5-040415c378c5" />
+<img width="1200" height="800" alt="dashboard-screenshot" src="https://github.com/user-attachments/assets/d9eeb758-96ec-4165-87b5-040415c378c5" />
 
 
 
