@@ -4,6 +4,9 @@
 
 Try the dashboard here: https://healthcare-disease-analysis-bysuguna.streamlit.app/
 
+<img width="2130" height="1211" alt="dashboard-screenshot" src="https://github.com/user-attachments/assets/d9eeb758-96ec-4165-87b5-040415c378c5" />
+
+
 
 A free, fully automated disease-surveillance project: a nightly ETL pipeline pulls
 live public-health data from the CDC, cleans and validates it, loads it into
