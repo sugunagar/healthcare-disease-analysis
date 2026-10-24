@@ -1,0 +1,82 @@
+{
+  "nhsn_admissions": {
+    "rows": 4533,
+    "columns": [
+      "state",
+      "week_ending",
+      "admissions_per_100k",
+      "admissions",
+      "disease"
+    ],
+    "null_rate": {
+      "state": 0.0,
+      "week_ending": 0.0,
+      "admissions_per_100k": 0.0179,
+      "admissions": 0.0,
+      "disease": 0.0
+    },
+    "duplicate_rows": 0,
+    "date_min": "2026-04-18 00:00:00",
+    "date_max": "2026-10-17 00:00:00"
+  },
+  "respnet_rates": {
+    "rows": 18869,
+    "columns": [
+      "surveillance_network",
+      "season",
+      "date_type",
+      "date",
+      "age_category",
+      "race",
+      "sex",
+      "state",
+      "data_type",
+      "estimate_type",
+      "estimate",
+      "rate_type"
+    ],
+    "null_rate": {
+      "surveillance_network": 0.0,
+      "season": 0.0,
+      "date_type": 0.0,
+      "date": 0.0,
+      "age_category": 0.0,
+      "race": 0.0,
+      "sex": 0.0,
+      "state": 0.0,
+      "data_type": 0.0,
+      "estimate_type": 0.0,
+      "estimate": 0.0,
+      "rate_type": 0.0
+    },
+    "duplicate_rows": 0,
+    "date_min": "2018-10-06 00:00:00",
+    "date_max": "2026-10-17 00:00:00"
+  },
+  "places_chronic": {
+    "rows": 23647,
+    "columns": [
+      "state",
+      "stateabbr",
+      "county",
+      "countyfips",
+      "measureid",
+      "disease",
+      "year",
+      "prevalence_pct"
+    ],
+    "null_rate": {
+      "state": 0.0,
+      "stateabbr": 0.0,
+      "county": 0.0,
+      "countyfips": 0.0,
+      "measureid": 0.0,
+      "disease": 0.0,
+      "year": 0.0,
+      "prevalence_pct": 0.0
+    },
+    "duplicate_rows": 0,
+    "date_min": null,
+    "date_max": null
+  }
+}

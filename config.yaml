@@ -1,0 +1,44 @@
+# All dataset configuration lives here. No API keys are needed for any source.
+socrata_base: "https://data.cdc.gov/resource"
+
+datasets:
+  nhsn_admissions:
+    id: "vdzy-6i9v"
+    name: "Weekly Hospital Respiratory Admission Levels and Rates (NHSN)"
+    date_column: "weekendingdate"
+    # CDC retains only recent weeks in this dataset (~6 months at last check).
+    min_date: "2024-10-01"
+    diseases:
+      covid: "totalconfc19newadmper100k"
+      influenza: "totalconfflunewadmper100k"
+      rsv: "totalconfrsvnewadmper100k"
+    count_columns:
+      covid: "totalconfc19newadm"
+      influenza: "totalconfflunewadm"
+      rsv: "totalconfrsvnewadm"
+
+  respnet_rates:
+    id: "kvib-3txy"
+    name: "RESP-NET Rates and Clinical Data"
+    date_column: "date"
+    # Keep overall-population rows and the three surveillance networks.
+    networks: ["COVID-NET", "FluSurv-NET", "RSV-NET"]
+
+  places_chronic:
+    id: "cwsq-ngmh"
+    name: "PLACES Local Data for Better Health (county measures)"
+    measures:
+      DIABETES: "Diabetes"
+      CASTHMA: "Current asthma"
+      COPD: "Chronic obstructive pulmonary disease"
+      OBESITY: "Obesity"
+      CANCER: "Cancer (excluding skin cancer)"
+      STROKE: "Stroke"
+      CHD: "Coronary heart disease"
+      BPHIGH: "High blood pressure"
+    value_type: "Age-adjusted prevalence"
+
+paths:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  duckdb_file: "data/processed/healthcare.duckdb"

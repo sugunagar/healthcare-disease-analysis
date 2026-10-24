@@ -1,0 +1,31 @@
+name: Daily healthcare data refresh
+
+# Free on public repos. Runs the pipeline every morning and commits the
+# refreshed data so the Streamlit dashboard always shows the latest run.
+on:
+  schedule:
+    - cron: "0 8 * * *"   # 08:00 UTC daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run pipeline
+        run: python pipeline/run_pipeline.py
+      - name: Commit refreshed data
+        run: |
+          git config user.name "data-refresh-bot"
+          git config user.email "data-refresh-bot@users.noreply.github.com"
+          git add data/processed/
+          git diff --cached --quiet || git commit -m "chore: refresh CDC data"
+          git push
