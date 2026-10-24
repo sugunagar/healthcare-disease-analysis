@@ -1,5 +1,10 @@
 # Real-Time Healthcare Disease Analysis
 
+## Live Demo
+
+Try the dashboard here: https://healthcare-disease-analysis-bysuguna.streamlit.app/
+
+
 A free, fully automated disease-surveillance project: a nightly ETL pipeline pulls
 live public-health data from the CDC, cleans and validates it, loads it into
 DuckDB/Parquet, and serves it in an interactive Streamlit dashboard.
