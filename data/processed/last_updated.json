@@ -1,8 +1,8 @@
 {
-  "last_run": "2026-10-29",
+  "last_run": "2026-10-30",
   "tables": {
-    "nhsn_admissions": 4533,
-    "respnet_rates": 18869,
+    "nhsn_admissions": 4701,
+    "respnet_rates": 18926,
     "places_chronic": 23648
   }
 }
