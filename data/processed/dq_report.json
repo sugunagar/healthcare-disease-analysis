@@ -1,6 +1,6 @@
 {
   "nhsn_admissions": {
-    "rows": 4869,
+    "rows": 5037,
     "columns": [
       "state",
       "week_ending",
@@ -17,7 +17,7 @@
     },
     "duplicate_rows": 0,
     "date_min": "2026-04-18 00:00:00",
-    "date_max": "2026-10-31 00:00:00"
+    "date_max": "2026-11-07 00:00:00"
   },
   "respnet_rates": {
     "rows": 18983,
@@ -54,7 +54,7 @@
     "date_max": "2026-10-31 00:00:00"
   },
   "places_chronic": {
-    "rows": 23648,
+    "rows": 23647,
     "columns": [
       "state",
       "stateabbr",
