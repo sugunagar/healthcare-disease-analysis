@@ -20,7 +20,7 @@
     "date_max": "2026-11-14 00:00:00"
   },
   "respnet_rates": {
-    "rows": 19097,
+    "rows": 19154,
     "columns": [
       "surveillance_network",
       "season",
@@ -51,7 +51,7 @@
     },
     "duplicate_rows": 0,
     "date_min": "2018-10-06 00:00:00",
-    "date_max": "2026-11-14 00:00:00"
+    "date_max": "2026-11-21 00:00:00"
   },
   "places_chronic": {
     "rows": 23648,
